@@ -1,0 +1,26 @@
+gitignore
+
+# Shell specific
+
+# Editor backups
+*~
+*.swp
+*.swo
+
+# Vim undo
+*.un~ 
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+
+# Bash
+.bash_history
