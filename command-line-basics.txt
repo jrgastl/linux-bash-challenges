@@ -17,3 +17,5 @@ Which option would I use with the `ls` command to output a comma-separated list 
 Answer: The option to be used with the `ls` command to output a comma-separated list of files is `-m`.
 
 Solution: Using `man ls`, we can find the `-m` option to show the output in a comma-separated list.
+
+Author notes: after using `man ls` for the fourth question, to find the option related to comma-separated list, `/comma separated` was type in order for the term to be found.
