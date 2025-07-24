@@ -1,10 +1,10 @@
 # Linux and Bash Challenges
 
-##Status  
+## Status  
 
 This repo construction is in progress.
 
-##Welcome!
+## Welcome!
 
 The aim of this repository is to document my journey on improving my Linux and Bash skills. The repo will contain the files for the challenges in the form of script and text files. This README will provide a file structure and a description of each challenge.  
 These exercises were done during my studies for the [Ubuntu Linux Professional Certificate by Canonical][url_certificate]
