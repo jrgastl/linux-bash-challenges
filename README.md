@@ -6,7 +6,8 @@ This repo construction is in progress.
 
 ## Welcome!
 
-The aim of this repository is to document my journey on improving my Linux and Bash skills. The repo will contain the files for the challenges in the form of script and text files. This README will provide a file structure and a description of each challenge.  
+The aim of this repository is to document my journey on improving my Linux and Bash skills. The repo contain the files for the challenges in the form of script and text files. Here you can find a file structure and a description of each challenge. Some challenges have only a description, since there are no files attached to them. More information can be found in course related to the challenge.
+
 These exercises were done during my studies for the [Ubuntu Linux Professional Certificate by Canonical][url_certificate]
 
 ## List of Challenges
@@ -14,11 +15,13 @@ These exercises were done during my studies for the [Ubuntu Linux Professional C
 See below a list of challenges, separated by courses, with a brief description.
 
 ### Course 1 - Linux Command Line
-[Learning Linux Command Line Linkedin Course][url_cli]
+Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 
-| Challenge   | File                    | Description              | Brief summary of skills or commands learned |
-|-------------|-------------------------|--------------------------|---------------------------------------------|
-|Challenge 1  |command-line-basics.txt  |Find commands infomation  |apropos, find, man, ls, df                   |
+|Challenge                | File                    | Description                                         | Brief summary commands learned       |
+|-------------------------|-------------------------|-----------------------------------------------------|--------------------------------------|
+|Challenge 1              |command-line-basics.txt  |Find commands infomation                             |apropos, find, man, ls, df            |
+|Challenge 2              |fix-broken-syntax.txt    |Fix commands syntax                                  |cd, mv, chmod                         |
+|Challenge 3              |not available            |Practicing folder copying, creation and links        |cp, mkdir, rmdir, rm, touch, ln       |  
 
 ## Folder Structure
 
@@ -26,6 +29,8 @@ See below a list of challenges, separated by courses, with a brief description.
 linux-bash-challenges/
 ├── learning-linux-command-line
     ├── command-line-basics.txt
+    ├── fix-broken-syntax.txt
+
 ```
 
 [url_certificate]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical
