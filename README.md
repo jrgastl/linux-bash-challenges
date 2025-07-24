@@ -19,9 +19,9 @@ Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 
 |Challenge                | File                    | Description                                         | Brief summary commands learned       |
 |-------------------------|-------------------------|-----------------------------------------------------|--------------------------------------|
-|Challenge 1              |command-line-basics.txt  |Find commands infomation                             |apropos, find, man, ls, df            |
-|Challenge 2              |fix-broken-syntax.txt    |Fix commands syntax                                  |cd, mv, chmod                         |
-|Challenge 3              |not available            |Practicing folder copying, creation and links        |cp, mkdir, rmdir, rm, touch, ln       |  
+|1                        |command-line-basics.txt  |Find commands infomation                             |apropos, find, man, ls, df            |
+|2                        |fix-broken-syntax.txt    |Fix commands syntax                                  |cd, mv, chmod                         |
+|3                        |not available            |Practicing folder copying, creation and links        |cp, mkdir, rmdir, rm, touch, ln       |  
 
 ## Folder Structure
 
