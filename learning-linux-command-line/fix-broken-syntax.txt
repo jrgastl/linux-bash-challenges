@@ -1,0 +1,21 @@
+Correct these commands and describe the errors in each
+
+- `cd ~/home/scott`
+
+Correct command: `cd /home/scott` or `cd ~`.
+Issue: the symbol `~` already refers to the home directory.
+
+- `LS /home`
+
+Correct command: `ls /home`.
+Issue: commands are case sensitve.
+
+- `mv ~/log.tar.gz home scott`
+
+Correct command: `mv ~/log.tar.gz /home/scott`
+Issue: command `mv` only take two arguments and three are given. The arguments `home` and `scott` are probably part of tha path, correctly written like `/home/scott`.
+
+- `chmod ~/log.tar.gz`
+
+Correct command: `chmod 755 ~/log.tar.gz` or `chmod -x ~/log.tar.gz`
+Issue: missing octal or symbolic value after `chmod` command. Values in the correction are examples.
