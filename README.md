@@ -14,7 +14,7 @@ These exercises were done during my studies for the [Ubuntu Linux Professional C
 
 See below a list of challenges, separated by courses, with a brief description.
 
-### Course 1 - Linux Command Line
+### Linux Command Line
 Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 
 |Challenge                | File                    | Description                                         | Brief summary commands learned       |
