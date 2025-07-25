@@ -17,11 +17,12 @@ See below a list of challenges, separated by courses, with a brief description.
 ### Linux Command Line
 Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 
-|Challenge | File                    | Description                                         | Brief summary commands learned       |
-|----------|-------------------------|-----------------------------------------------------|--------------------------------------|
-|1         |command-line-basics.txt  |Find commands infomation                             |apropos, find, man, ls, df            |
-|2         |fix-broken-syntax.txt    |Fix commands syntax                                  |cd, mv, chmod                         |
-|3         |not available            |Practicing folder copying, creation and links        |cp, mkdir, rmdir, rm, touch, ln       |  
+|Challenge | File                    | Description                                             | Brief summary of new commands learned |
+|----------|-------------------------|---------------------------------------------------------|---------------------------------------|
+|1         |command-line-basics.txt  |Find commands infomation                                 |apropos, find, man, ls, df             |
+|2         |fix-broken-syntax.txt    |Fix commands syntax                                      |cd, mv, chmod                          |
+|3         |not available            |Practicing folder copying, creation and links            |cp, mkdir, rmdir, rm, touch, ln        |
+|4         |create-share-file.txt    |Creating, editing the permissions and compressing a file |tar, zip                               |   
 
 ## Folder Structure
 
@@ -30,7 +31,8 @@ linux-bash-challenges/
 ├── learning-linux-command-line
     ├── command-line-basics.txt
     ├── fix-broken-syntax.txt
-
+    ├── create-share-file.txt
+    ├── create-share-file.tar.gz
 ```
 
 [url_certificate]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical
