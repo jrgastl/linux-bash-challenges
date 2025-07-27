@@ -1,0 +1,15 @@
+- Extract log.tar.gz
+
+- Look for unauthorized connection attempts
+
+- Extract usernames an attacker tried to use
+
+- Create a file containing these names (and make it organized)
+
+- Use tools you've learned about to explore and process the log
+
+Own solution: created the folder "unpack" using the command `mkdir unpack`. Extracted the log file using the command `tar -xf log.tar.gz -C unpack`. To parse the information from the file the following command was used:
+`grep "invalid user" auth.log | awk '{print $11}' | sort -du > invalid-users.txt`
+
+Instructor solution: Extracted the files using `tar -xvf log.tar.gz` and the following command to parse the information from the file:
+`cat auth.log | grep "input_userauth_request" | awk '{print $9}' | sort -u > users.txt`
