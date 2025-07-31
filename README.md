@@ -2,7 +2,7 @@
 
 ## Status  
 
-This repo construction is in progress.
+[Certificate][url_final_certificate] completed.
 
 ## Welcome!
 
@@ -42,3 +42,4 @@ linux-bash-challenges/
 
 [url_certificate]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical
 [url_cli]:https://www.linkedin.com/learning/learning-linux-command-line-14447912
+[url_final_certificate]:https://www.linkedin.com/learning/certificates/2dbdffeef22b53cdb2dad04393b86435c347baff33ca0280358b604a084508c4?trk=share_certificate
