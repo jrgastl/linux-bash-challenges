@@ -2,7 +2,7 @@
 
 ## Status  
 
-[Certificate][url_final_certificate] completed.
+Completed.[Professional Certificate][url_final_certificate].  
 
 ## Welcome!
 
