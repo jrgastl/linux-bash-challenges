@@ -2,7 +2,8 @@
 
 ## Status  
 
-Completed.[Professional Certificate][url_final_certificate].  
+Certification Completed. [Professional Certificate][url_final_certificate].  
+Repository still under construction.
 
 ## Welcome!
 
