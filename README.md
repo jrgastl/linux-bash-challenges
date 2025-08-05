@@ -26,6 +26,9 @@ Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 |4         |create-share-file.txt        |Creating, editing the permissions and compressing a file                    |tar, zip                               | 
 |5         |extract-information-file.txt |Extracting compressed files, creating pipes and transfering data to a file  |cat, grep, awk, sort, \| , \>          |
 
+### Bash Scripting
+Course: [Learning Bash Scripting][url_bash] by Scott Simpson (not inside the Ubuntu Linux Professional Certificate learning path)
+
 ## Folder Structure
 
 ```plaintext
@@ -44,3 +47,4 @@ linux-bash-challenges/
 [url_certificate]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical
 [url_cli]:https://www.linkedin.com/learning/learning-linux-command-line-14447912
 [url_final_certificate]:https://www.linkedin.com/learning/certificates/2dbdffeef22b53cdb2dad04393b86435c347baff33ca0280358b604a084508c4?trk=share_certificate
+[url_bash]:https://www.linkedin.com/learning/learning-bash-scripting-26210777
