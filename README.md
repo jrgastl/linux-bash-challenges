@@ -7,7 +7,7 @@ Repository: under construction.
 
 ## Welcome!  
   
-The aim of this repository is to document my journey on improving my Linux and Bash skills. The repo contain the files for the challenges in the form of script and text files. In the README.md you can find a file structure and a description of each challenge.  
+The aim of this repository is to document my journey on improving my Linux and Bash skills. It contains the files for the challenges in the form of script and text files. In the README.md you can find a file structure and a description of each challenge.  
 
 These exercises were done during my studies for the [Ubuntu Linux Professional Certificate by Canonical][url_cert_link]  
 
