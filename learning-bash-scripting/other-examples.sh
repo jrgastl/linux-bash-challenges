@@ -32,5 +32,16 @@ echo $([[ -d /home || -d /house ]] && echo "yes, one of them is a directory")
 echo "Are both /home and /house directories?"
 echo $([[ -d /home && -d /house ]]; echo $?)
 
-#Arrays - some examples on how to do arrays.
-echo 
+#Arrays - some examples on how to do arrays
+declare -a car_brands=(ferrari porsche maseratti)
+echo ${car_brands[1]}
+car_brands[5]=lamborghini
+echo ${car_brands[5]}
+for i in {0..5};do echo $i: ${car_brands[i]}; done 
+declare -A vm
+vm["name"]="main"
+vm["cpu"]=4
+vm["gpu"]="nvidia"
+vm["disk"]=100
+
+echo "The Virual Machine has ${vm["cpu"]} cores and a ${vm["gpu"]} gpu"
