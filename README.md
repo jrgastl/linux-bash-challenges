@@ -18,16 +18,22 @@ See below a list of challenges, separated by courses, with a brief description.
 ### Linux Command Line
 Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 
-|Challenge | File                        | Description                                                                | Brief summary of new commands learned |
-|----------|-----------------------------|----------------------------------------------------------------------------|---------------------------------------|
-|1         |command-line-basics.txt      |Find commands infomation                                                    |apropos, find, man, ls, df             |
-|2         |fix-broken-syntax.txt        |Fix commands syntax                                                         |cd, mv, chmod                          |
-|3         |not available                |Practicing folder copying, creation and links                               |cp, mkdir, rmdir, rm, touch, ln        |
-|4         |create-share-file.txt        |Creating, editing the permissions and compressing a file                    |tar, zip                               | 
-|5         |extract-information-file.txt |Extracting compressed files, creating pipes and transfering data to a file  |cat, grep, awk, sort, \| , \>          |
+|Challenge | File                        | Description                                                                | Brief summary of skills and commands learned                          |
+|----------|-----------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
+|1         |command-line-basics.txt      |Find commands infomation                                                    |apropos, find, man, ls, df                                             |
+|2         |fix-broken-syntax.txt        |Fix commands syntax                                                         |cd, mv, chmod                                                          |
+|3         |not available                |Practicing folder copying, creation and links                               |cp, mkdir, rmdir, rm, touch, ln                                        |
+|4         |create-share-file.txt        |Creating, editing the permissions and compressing a file                    |tar, zip                                                               | 
+|5         |extract-information-file.txt |Extracting compressed files, creating pipes and transfering data to a file  |cat, grep, awk, sort, \| , \>                                          |
 
 ### Bash Scripting
 Course: [Learning Bash Scripting][url_bash] by Scott Simpson (not inside the Ubuntu Linux Professional Certificate learning path)
+
+|Challenge | File                        | Description                                                                | Brief summary of skills and commands learned                           |
+|----------|-----------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------|
+|6         |system-report.sh             |Create a simple system report script                                        | variables, command expansion, echo, printf, color formatting, bc       |
+|7         |other-examples.sh            |Script created to show some examples of what was learned in the chapter     | braces, parameter and arithmetic expansions, extended tests and arrays |
+
 
 ## Folder Structure
 
