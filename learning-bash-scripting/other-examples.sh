@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-#Brace expansion
+#Brace expansion - an example on how to optimize a command by using the brace expansion.
 echo ""
 echo "Brace Expansion Example"
 echo {test,this,text}_{1..3}
 
-#Parameter expansion and variables
+#Parameter expansion and variables - some examples on how to deal with variables and parameters.
 echo "" 
 echo "Parameter Expansion and Variables Example"
 declare -u a="Joao"
 echo -e "Replace this name "$a"...\n...by this name "${a/JOAO/Ricardo}""
 
-#Arithmetic expansion and evaluation
+#Arithmetic expansion and evaluation - some examples on how to do arithmetic operations.
 echo ""
 echo "Arithmetic Expansion and Evaluation Examples"
 declare -i mynum=48
@@ -22,7 +22,7 @@ echo "Mynum times 3 divided by 5 is $(( (mynum * 3) / 5 ))"
 echo "bc can help us to deal with decimals, like in 100 divided by 3 that is equal to $(echo "scale=3; 100/3" | bc)" 
 echo "RANDOM can be used to give us a random number between 1 and 10 : $((1 + RANDOM % 10))"
 
-#Extended test
+#Extended test - some examples of comparisons that can be made, including to create conditions.
 echo "" 
 echo "Extended Test Example"
 echo "Is /home a directory?"
@@ -32,5 +32,5 @@ echo $([[ -d /home || -d /house ]] && echo "yes, one of them is a directory")
 echo "Are both /home and /house directories?"
 echo $([[ -d /home && -d /house ]]; echo $?)
 
-#Arrays
+#Arrays - some examples on how to do arrays.
 echo 

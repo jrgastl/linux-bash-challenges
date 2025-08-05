@@ -1,3 +1,7 @@
+# Author Notes: I spent more time in this exercise than what was suggested. The idea was to have as many skills demonstrated as possible.
+# In the end still could have used variables for the formatting so I would repeat myself less. 
+# I put some other examples of what was learned in this chapter of the course in the other-examples script.
+#
 # Task Description
 #Compose a script to show some system information.
 #Use some standard tools, like df, free, or others.
