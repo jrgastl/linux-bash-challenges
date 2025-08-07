@@ -12,13 +12,15 @@ for i in $(seq 1 $1); do
 		done
 	codearr+=($code)
 	done
+echo ${codearr[@]}
 declare -a passarr
-for k in ${codearr[@]}; do
-	while read f; do 
-		if [[ $(echo "$f" | awk '{printf $1}') = $k ]]; then
-			passarr+=($(echo "$f" | awk '{printf $2}'))
-		echo $passarr
+while read f; do
+	number=$(echo "$f" | awk '{printf $1}')
+	word=$(echo "$f" | awk '{printf $2}')
+	for k in ${!codearr[@]}; do
+		if [[ $number = ${codearr[k]} ]]; then
+			passarr[k]=$word
 		fi
-	done < ./text/wordlist2.asc
-done
+	done
+done < ./text/wordlist.asc
 echo ${passarr[@]}
