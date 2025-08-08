@@ -29,10 +29,11 @@ Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 ### Bash Scripting  
 Course: [Learning Bash Scripting][url_bash] by Scott Simpson (extra course, does not belong to the Ubuntu Linux Professional Certificate)  
 
-|Challenge | File | Description | Brief summary of skills and commands learned |  
+|Challenge | Files | Description | Brief summary of skills and commands learned |  
 |-|-|-|-|  
-|6 |system-report.sh | Create a simple system report script | variables, command expansion, echo, printf, color formatting, bc|  
-|7 |other-examples.sh | Script created to show some examples of what was learned in the chapter | braces, parameter and arithmetic expansions, extended tests and arrays |  
+|6 |system-report.sh | Create a simple system report script | variables, command expansion, echo, printf, color formatting, bc|    
+|n/a |other-examples.sh | Script created to show some examples of what was learned in the chapter | braces, parameter and arithmetic expansions, extended tests and arrays |    
+|7 |slowdicepassgen.sh, fastdicepassgen.sh | Scrip demonstrating control structures | while loop, for loop, if statements |  
 
 ## Folder Structure
 
@@ -49,9 +50,14 @@ linux-bash-challenges/
         └── auth.log                        #File used in Challenge 5
 └── learning-bash-scripting
     ├── system-report.sh                    #Challenge 6
-    ├── other-examples.sh                   #Challenge 7
+    ├── other-examples.sh                   #Additional examples
     └── solutions
-        └── sysreport                       #Solution from the instructor for Challenge 6 
+        └── sysreport                       #Solution from the instructor for Challenge 6  
+        └── fortune                         #Solution from the instructor for Challenge 7
+    ├── slowdicepassgen.sh                  #Challenge 7, first idea
+    ├── fastdicepassgen.sh                  #Challenge 7, optmized
+    └── texts
+        └── worlist.asc                     #Diceware word list for Challenge 7
 ```
 Author: Ricardo Gastl
 
