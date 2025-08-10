@@ -18,7 +18,7 @@ declare -a passarr
 	number=$(echo "$f" | awk '{printf $1}')
 	word=$(echo "$f" | awk '{printf $2}')
 for k in ${!codearr[@]}; do
-	word=$(grep ${codearr[k]} ./text/wordlist.asc | awk '{printf $2}')
+	word=$(grep ${codearr[k]} ./texts/wordlist.asc | awk '{printf $2}')
 	passarr[k]=$word
 done 
 echo -e  "Your pass phrase is: $yellow${passarr[@]}$normal"

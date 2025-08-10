@@ -3,7 +3,6 @@
 ## Status  
 
 Certification Completed. [Professional Certificate][url_final_certificate].  
-Repository: under construction.  
 
 ## Welcome!  
   
@@ -27,13 +26,14 @@ Course: [Learning Linux Command Line][url_cli] by Scott Simpson
 | 5 | extract-information-file.txt | Extracting compressed files, creating pipes and transfering data to a file  | cat, grep, awk, sort, \| , \> |  
 
 ### Bash Scripting  
-Course: [Learning Bash Scripting][url_bash] by Scott Simpson (extra course, does not belong to the Ubuntu Linux Professional Certificate)  
+Course: [Learning Bash Scripting¹][url_bash] by Scott Simpson   
 
 |Challenge | Files | Description | Brief summary of skills and commands learned |  
 |-|-|-|-|  
-|6 |system-report.sh | Create a simple system report script | variables, command expansion, echo, printf, color formatting, bc|    
+|6 |system-report.sh | Create a simple system report script | variables, command expansion, echo command, printf command, color formatting, bc|    
 |n/a |other-examples.sh | Script created to show some examples of what was learned in the chapter | braces, parameter and arithmetic expansions, extended tests and arrays |    
-|7 |slowdicepassgen.sh, fastdicepassgen.sh | Scrip demonstrating control structures | while loop, for loop, if statements |  
+|7 |slowdicepassgen.sh, fastdicepassgen.sh | Script demonstrating control structures | while loop, for loop, if statements |  
+|8 |todolist.sh | A To-Do List script | case statement, functions, unset command, read and write files |  
 
 ## Folder Structure
 
@@ -52,16 +52,20 @@ linux-bash-challenges/
     ├── system-report.sh                    #Challenge 6
     ├── other-examples.sh                   #Additional examples
     └── solutions
-        └── sysreport                       #Solution from the instructor for Challenge 6  
+        ├── sysreport                       #Solution from the instructor for Challenge 6  
         └── fortune                         #Solution from the instructor for Challenge 7
     ├── slowdicepassgen.sh                  #Challenge 7, first idea
     ├── fastdicepassgen.sh                  #Challenge 7, optmized
     └── texts
-        └── worlist.asc                     #Diceware word list for Challenge 7
+        ├── worlist.asc                     #Diceware word list for Challenge 7
+        ├── closedtasks.txt                 #File to save data from Challenge 8 script
+        └── opentasks.txt                   #File to save data from Challenge 8 script
+    └── todolist.sh                         #Challenge 8
 ```
 Author: Ricardo Gastl
 
-[url_cert_link]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical
+Note 1: This course does not belong to the Ubuntu Linux Professional Certificate learning path.  
+[url_cert_link]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical  
 [url_cli]:https://www.linkedin.com/learning/learning-linux-command-line-14447912
 [url_final_certificate]:https://www.linkedin.com/learning/certificates/2dbdffeef22b53cdb2dad04393b86435c347baff33ca0280358b604a084508c4?trk=share_certificate
 [url_bash]:https://www.linkedin.com/learning/learning-bash-scripting-26210777

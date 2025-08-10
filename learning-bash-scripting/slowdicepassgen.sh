@@ -32,5 +32,5 @@ while read f; do
 			passarr[k]=$word
 		fi
 	done
-done < ./text/wordlist.asc
+done < ./texts/wordlist.asc
 echo -e "Your pass phrase is $yellow${passarr[@]}$normal"

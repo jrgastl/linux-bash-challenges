@@ -1,0 +1,11 @@
+Advancing Your Skills in SQL (Learning Path)
+Docker Foundations Professional Certificate
+Learning Git & GitHub
+Terraform: Mananging Network Infrastructure
+Advanced Terraform
+DevOps Foundations: Your First Project
+Ansible Mastery: From Basics to Advanced
+CI/CD Basics
+DevOps Professional Certificate
+Atlassian Agile Project Management
+DevOps Capstone Project
