@@ -1,15 +1,15 @@
-#Author Notes:
-#For this task I tried to implement as many skills learned in the chapter as possible.
+#Author Notes: For this task I tried to implement as many skills learned in the chapter as possible.
 #Since there is a much faster way of doing the same thing, I also created the fast diceware
 #pass phrase generator, that you can check in the file fastdicepassgen.sh
 #
-#Task Description
-#Compose a script that uses control structure to react to input or other conditions.
+#Task Description: Compose a script that uses control structure to react to input or other conditions.
 #Examples include a quote viewer, a dice roll, or a card draw.
 #Seat aside 20 minutes to build your script.
 #
 #Diceware passphrase generator
 #Please, add as argument the number of desired pass phrases.
+
+#!/usr/bin/env bash
 
 yellow="\033[33m"
 normal="\033[0m"

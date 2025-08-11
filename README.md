@@ -35,6 +35,17 @@ Course: [Learning Bash Scripting¹][url_bash] by Scott Simpson
 |7 |slowdicepassgen.sh, fastdicepassgen.sh | Script demonstrating control structures | while loop, for loop, if statements |  
 |8 |todolist.sh | A To-Do List script | case statement, functions, unset command, read and write files |  
 
+## How to execute the scripts
+
+Make sure it is executable:
+```bash
+chmod u+x script.sh
+``` 
+Execute the script:
+```bash
+./script.sh
+``` 
+
 ## Folder Structure
 
 ```plaintext

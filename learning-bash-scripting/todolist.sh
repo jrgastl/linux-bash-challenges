@@ -1,4 +1,7 @@
-#Compose a script that responds to user input and uses other elements from earlier in the course.
+#Author Notes: Spent quite some time in this script, but the learning process was worth it.
+#Also, had a lot of fun doing it.
+#
+#Task description: Compose a script that responds to user input and uses other elements from earlier in the course.
 #Set aside about 30 minutes build your script.
 
 #!/usr/bin/env bash

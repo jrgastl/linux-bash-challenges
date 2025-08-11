@@ -2,8 +2,7 @@
 # In the end still could have used variables for the formatting so I would repeat myself less. 
 # I put some other examples of what was learned in this chapter of the course in the other-examples script.
 #
-# Task Description
-#Compose a script to show some system information.
+# Task Description: Compose a script to show some system information.
 #Use some standard tools, like df, free, or others.
 #Use awk or sed to extract text from output, if you know them.
 #Use formatted text.
