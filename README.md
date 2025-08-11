@@ -51,9 +51,6 @@ linux-bash-challenges/
 └── learning-bash-scripting
     ├── system-report.sh                    #Challenge 6
     ├── other-examples.sh                   #Additional examples
-    └── solutions
-        ├── sysreport                       #Solution from the instructor for Challenge 6  
-        └── fortune                         #Solution from the instructor for Challenge 7
     ├── slowdicepassgen.sh                  #Challenge 7, first idea
     ├── fastdicepassgen.sh                  #Challenge 7, optmized
     └── texts
@@ -63,6 +60,7 @@ linux-bash-challenges/
     └── todolist.sh                         #Challenge 8
 ```
 Note 1: This course does not belong to the Ubuntu Linux Professional Certificate learning path.  
+
 Author: Ricardo Gastl
 
 [url_cert_link]:https://www.linkedin.com/learning/paths/ubuntu-linux-professional-certificate-by-canonical  
