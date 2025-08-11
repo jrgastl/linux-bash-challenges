@@ -46,7 +46,8 @@ opentasks+=("$newtask")
 clear
 showtasks
 echo ""
-echo "Your task was succesfully added"
+echo "The task was succesfully added"
+echo ""
 }
 
 #remove an open task
@@ -61,14 +62,16 @@ if [[ $tasknumber =~ ^[0-9]+$ ]]; then
 		if [[ ${opentasks[tasknumber]} = ${opentasks[k]} ]]; then
 			unset opentasks[tasknumber]
 			opentasks=("${opentasks[@]}")
-			status="Your task was successfully removed!"
+			status="The task was successfully removed!"
 			break
 		fi
 	done
 fi
 clear
 showtasks
+echo ""
 echo $status
+echo ""
 }
 
 #remove a closed task
@@ -83,14 +86,16 @@ if [[ $tasknumber =~ ^[0-9]+$ ]]; then
 		if [[ ${closedtasks[tasknumber]} = ${closedtasks[k]} ]]; then
 			unset closedtasks[tasknumber]
 			closedtasks=("${closedtasks[@]}")
-			status="Your task was successfully removed!"
+			status="The task was successfully removed!"
 			break
 		fi
 	done
 fi
 clear
 showtasks
+echo ""
 echo $status
+echo ""
 }
 
 #remove a task menu
@@ -118,14 +123,16 @@ if [[ $tasknumber =~ ^[0-9]+$ ]]; then
 			closedtasks+=("${opentasks[tasknumber]}")
 			unset opentasks[tasknumber]
 			opentasks=("${opentasks[@]}")
-			status="Your task was successfully closed!"
+			status="The task was successfully closed!"
 			break
 		fi
 	done
 fi
 clear
 showtasks
+echo ""
 echo $status
+echo ""
 }
 
 #clear all tasks
@@ -158,6 +165,20 @@ elif [[ $savequit = "N" || $savequit = "n" ]];then
 fi
 }
 
+#task from argument
+argtask() {
+	echo $1 >> ./texts/opentasks.txt
+	echo "\"$1\" was added to your open tasks list!"
+	exit
+}
+
+#arguments and options
+while getopts a:h option; do
+	case $option in
+		a)task=$OPTARG; argtask "$task";;
+		h)echo "Use option -a to add a task from the command line"; exit;;
+	esac
+done
 #start
 clear
 showtasks
