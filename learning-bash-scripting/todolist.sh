@@ -16,22 +16,29 @@ while read f; do
 	closedtasks+=("$f")
 done < ./texts/closedtasks.txt
 
+#formatting
+screen=$(tput cols)
+teal="\033[36m"
+pink="\033[35m"
+normal="\033[0m"
+yellow="\033[33m"
+green="\033[32m"
+red="\033[31m"
+
 #show tasks
 showtasks() {
 echo ""
-echo "Open tasks"
-echo "----------"
-echo ""
+printf "$teal%s$normal \n" "📖 Open Tasks"
+echo -e "$teal-----------------$normal"
 for i in ${!opentasks[@]}; do
 	echo "( ) " ${opentasks[i]}
 done
 
 echo ""
-echo "Closed tasks"
-echo "------------"
-echo ""
+printf "$pink%s$normal \n" "📘 Closed tasks"
+echo -e "$pink-----------------$normal"
 for i in ${!closedtasks[@]}; do
-	echo "(X) " ${closedtasks[i]}
+	echo "✔️ " ${closedtasks[i]}
 done
 echo ""
 echo "Press ENTER to show the menu"
@@ -41,67 +48,68 @@ echo ""
 
 #add a new task
 addnewtask() {
-read -p "Please add a new task: " newtask
+read -p "$(echo -e $yellow"Please add a new task: $normal")" newtask
 opentasks+=("$newtask")
 clear
 showtasks
-echo ""
-echo "The task was succesfully added"
+echo -e  $green"The task was succesfully added!$normal"
 echo ""
 }
 
 #remove an open task
 removeopentask(){
+echo ""
 for i in ${!opentasks[@]}; do
-	echo "$i ${opentasks[i]}"
+	echo "$i) ${opentasks[i]}"
 done
-read -p "Select the number of the task to be deleted: " tasknumber
-local status="Task not found!"
+echo ""
+read -p "$(echo -e $yellow"Select the number of the task to be deleted: $normal")" tasknumber
+local status=$red"Task not found!$normal"
 if [[ $tasknumber =~ ^[0-9]+$ ]]; then
 	for k in ${!opentasks[@]}; do
 		if [[ ${opentasks[tasknumber]} = ${opentasks[k]} ]]; then
 			unset opentasks[tasknumber]
 			opentasks=("${opentasks[@]}")
-			status="The task was successfully removed!"
+			status=$green"The task was successfully removed!$normal"
 			break
 		fi
 	done
 fi
 clear
 showtasks
-echo ""
-echo $status
+echo -e $status
 echo ""
 }
 
 #remove a closed task
 removeclosedtask(){
+echo ""
 for i in ${!closedtasks[@]}; do
-	echo "$i ${closedtasks[i]}"
+	echo "$i) ${closedtasks[i]}"
 done
-read -p "Select the number of the task to be deleted: " tasknumber
-local status="Task not found!"
+echo ""
+read -p "$(echo -e $yellow"Select the number of the task to be deleted: $normal")" tasknumber
+local status=$red"Task not found!$normal"
 if [[ $tasknumber =~ ^[0-9]+$ ]]; then
 	for k in ${!closedtasks[@]}; do
 		if [[ ${closedtasks[tasknumber]} = ${closedtasks[k]} ]]; then
 			unset closedtasks[tasknumber]
 			closedtasks=("${closedtasks[@]}")
-			status="The task was successfully removed!"
+			status=$green"The task was successfully removed!$normal"
 			break
 		fi
 	done
 fi
 clear
 showtasks
-echo ""
-echo $status
+echo -e  $status
 echo ""
 }
 
 #remove a task menu
 removetask() {
-
-echo "From which list do you want to remove a task?"
+echo ""
+echo -e $yellow"From which list do you want to remove a task?$normal"
 select list in "Open Tasks" "Closed Tasks"; do
 	case $list in
 		"Open Tasks") removeopentask; break;;
@@ -112,56 +120,57 @@ done
 
 #close a task
 closetask(){
+echo ""
 for i in ${!opentasks[@]}; do
-	echo "$i ${opentasks[i]}"
+	echo "$i) ${opentasks[i]}"
 done
-read -p "Select task to be closed: " tasknumber
-local status="Task not found!"
+echo ""
+read -p "$(echo -e $yellow"Select task to be closed: $normal")" tasknumber
+local status=$red"Task not found!$normal"
 if [[ $tasknumber =~ ^[0-9]+$ ]]; then
 	for k in ${!opentasks[@]}; do
 		if [[ ${opentasks[tasknumber]} = ${opentasks[k]} ]]; then
 			closedtasks+=("${opentasks[tasknumber]}")
 			unset opentasks[tasknumber]
 			opentasks=("${opentasks[@]}")
-			status="The task was successfully closed!"
+			status=$green"The task was successfully closed!$normal"
 			break
 		fi
 	done
 fi
 clear
 showtasks
-echo ""
-echo $status
+echo -e $status
 echo ""
 }
 
 #clear all tasks
 clearall() {
-read -p "This will erase all tasks! Do you want to proceed? [Y or N] " proceed
-if [[ $proceed = "Y" || $proceed = "y" ]]; then
+read -p "$(echo -e $red"This will erase all tasks! Do you want to proceed? [Y or N] $normal")" answer
+if [[ $answer = "Y" || $answer = "y" ]]; then
 	opentasks=()
 	closedtasks=()
 	clear
 	showtasks
-	echo "Tasks were successfully erased!"
+	echo -e $green"Tasks were successfully erased!$normal"
 fi
 }
 
-#quit menu
-quitscript(){
-
-read -p "Do you want to save before quitting? [Y or N] " savequit
-if [[ $savequit = "Y" || $savequit = "y" ]];then
+#quit options
+quitsave(){
+read -p "$(echo -e  $yellow"Do you want to save and quit? [Y or N] $normal")" answer
+if [[ $answer = "Y" || $answer = "y" ]];then
 	> ./texts/opentasks.txt
 	> ./texts/closedtasks.txt
 	for i in ${!opentasks[@]}; do echo ${opentasks[i]} >> ./texts/opentasks.txt; done
 	for i in ${!closedtasks[@]}; do echo ${closedtasks[i]} >> ./texts/closedtasks.txt; done
 	exit
-elif [[ $savequit = "N" || $savequit = "n" ]];then
-	read -p "Quit without saving? [Y or N] " justquit
-	if [[ $justquit = "Y" || $justquit = "y" ]]; then
-		exit
-	fi
+fi
+}
+quitonly(){
+read -p "$(echo -e  $yellow"Do you want to quit without saving? [Y or N] $normal")" answer
+if [[ $answer = "Y" || $answer = "y" ]];then
+	exit
 fi
 }
 
@@ -188,13 +197,16 @@ add="Add a new task"
 remove="Remove a task"
 close="Close a task"
 clearall="Clear all tasks"
+savequit="Save and quit"
+justquit="Quit without saving"
 
-select option in "$add" "$remove" "$close" "$clearall" "Quit"; do
+select option in "$add" "$remove" "$close" "$clearall" "$savequit" "$justquit"; do
 	case $option in
 			$add) addnewtask;;
-			$remove) removetask ;;
-			$close) closetask ;;
+			$remove) removetask;;
+			$close) closetask;;
 			$clearall) clearall;;
-			Quit) quitscript;;
+			$savequit) quitsave;;
+			$justquit) quitonly;;
 	esac
 done
