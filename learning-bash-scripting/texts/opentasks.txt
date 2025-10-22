@@ -1,5 +1,3 @@
-Advancing Your Skills in SQL (Learning Path)
-Docker Foundations Professional Certificate
 Learning Git & GitHub
 Terraform: Mananging Network Infrastructure
 Advanced Terraform

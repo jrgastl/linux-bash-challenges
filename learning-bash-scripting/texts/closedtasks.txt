@@ -1,1 +1,3 @@
 Linux Professional Certificate (Canonical)
+Advancing Your Skills in SQL (Learning Path)
+Docker Foundations Professional Certificate
